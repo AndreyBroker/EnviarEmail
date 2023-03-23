@@ -80,6 +80,3 @@ class Email:
         smtp.login(self.email, self.password)
         smtp.sendmail(self.email, to, msg.as_string())
         smtp.quit()
-
-teste = Email("andrey.so@redeioa.com.br", "dovovgrlvuhzkjgo", "smtp.gmail.com")
-teste.send_file("andreybroker02@gmail.com", "teste", "teste com arquivo", './teste.txt', "outro_nome")
